@@ -10,6 +10,7 @@ import {
     NavbarText
   } from 'reactstrap';
 import CartSummary from "./CartSummary";
+import { Link } from "react-router-dom";
   
   
  
@@ -36,7 +37,9 @@ export default class Navi extends React.Component {
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink >
+                <Link to="form1">Form</Link>
+              </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
